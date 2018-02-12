@@ -1,0 +1,185 @@
+@keyframes "shake" {
+  from {
+    left: -200px;
+  }
+  50% {
+    left: -100px;
+  }
+  to {
+    left: 0px;
+  }
+}
+.body {
+  margin: 0px;
+  font-family: 'Chiller';
+  font-size: 20pt;
+}
+.main {
+  z-index: 2;
+  margin: 0 20%;
+  display: block;
+  position: relative;
+  min-width: 240px;
+  box-shadow: 1px 1px 5px #000;
+}
+.header {
+  display: block;
+  position: relative;
+  padding: 15px;
+  text-shadow: 2px 2px 1px #999;
+  font-size: 34pt;
+  margin: 0px;
+  background-color: #000;
+  color: #fff;
+}
+.footer {
+  display: block;
+  position: relative;
+  padding: 15px;
+  background-color: #000;
+  color: #fff;
+  z-index: 3;
+}
+.content {
+  display: block;
+  position: relative;
+  padding: 15px;
+  min-height: 700px;
+  background-color: #fff;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+.up {
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: fixed;
+  padding: 15px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #000;
+  color: #fff;
+  z-index: 3;
+  box-shadow: 1px 1px 5px #000;
+}
+.up:hover {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 1px 1px 5px #000;
+}
+.news {
+  margin: 0 0 10px 0;
+  display: block;
+  position: relative;
+  padding: 15px;
+  box-shadow: 1px 1px 5px #000;
+}
+.button {
+  margin: 5px 0;
+  border: 0;
+  padding: 0 30px;
+  font-family: 'Chiller';
+  font-size: 20pt;
+  background-color: #000;
+  color: #fff;
+  box-shadow: 1px 1px 5px #000;
+}
+input {
+  font-family: 'Chiller';
+  font-size: 14pt;
+}
+h1 {
+  margin: 0px;
+  font-family: 'Chiller';
+  font-size: 28pt;
+}
+.color1 {
+  height: 70px;
+  display: block;
+  background-color: red;
+}
+.color2 {
+  height: 70px;
+  display: block;
+  background-color: green;
+}
+.color3 {
+  height: 70px;
+  display: block;
+  background-color: blue;
+}
+.photo {
+  margin: 5px;
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+#menu {
+  display: none;
+}
+#menu:checked ~ .opened {
+  display: inline-block;
+  position: fixed;
+  margin: 5px;
+  top: 45px;
+  float: left;
+  width: 17%;
+  animation: shake 0.25s linear 0s 1 normal;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px #000;
+}
+.menu {
+  display: inline-block;
+  position: fixed;
+  padding: 5px;
+  top: 0;
+  float: left;
+  width: 17%;
+  height: 30px;
+}
+.opened {
+  display: none;
+}
+.opened div {
+  padding: 5px;
+}
+.opened > a > div:hover {
+  background-color: #000;
+  color: #fff;
+}
+.menu_button {
+  border-radius: 5px;
+  background: linear-gradient(to top right, #fff, #fff, #000, #000);
+  padding: 3px 8px;
+  box-shadow: 1px 1px 5px #000;
+}
+.menu_button hr {
+  margin: 5px;
+}
+.menu2 {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+.menu2:hover > .opened2 {
+  display: block;
+  position: relative;
+  margin: 0px;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px #000;
+}
+.opened2 {
+  display: none;
+}
+.opened2 > a > div {
+  background-color: #fff;
+  color: #000;
+}
+.opened2 > a > div:hover {
+  background-color: #000;
+  color: #fff;
+}
